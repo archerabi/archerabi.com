@@ -1,0 +1,69 @@
+---
+layout: post
+title: Jacoco , Maven and Sonar
+categories:
+- programming
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  publicize_twitter_user: archerabi
+  _wpas_done_3039800: '1'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:51820954;b:1;}}
+  geo_public: '0'
+  _wpas_skip_3039800: '1'
+  _elasticsearch_indexed_on: '2013-02-26 04:42:18'
+---
+Jacoco is a great tool to analyze your projects and get code coverage reports . Combined with Sonar and Jenkins/Hudson , jacoco can be a developer's best friend in maintaining good coverage reports.
+
+To start off ,add this to your pom file
+{% highlight xml %}
+<properties>
+  <jacoco.version>0.6.2.201302030002</jacoco.version>
+  <sonar.language>java</sonar.language>
+  <sonar.java.codeCoveragePlugin>jacoco</sonar.java.codeCoveragePlugin>
+  <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+  <sonar.jacoco.reportPath>
+    ../${project.artifactId}.tests/target/jacoco.exec
+  </sonar.jacoco.reportPath>
+  <sonar.surefire.reportsPath>
+  ../${project.artifactId}.tests/target/surefire-reports/
+  </sonar.surefire.reportsPath>
+  <sonar.jacoco.excludes>com/company/pack1/**:com/company/pack2/**:</sonar.jacoco.excludes>
+</properties>
+
+<dependencies>
+  <dependency>
+    <groupId>org.jacoco</groupId>
+    <artifactId>org.jacoco.agent</artifactId>
+    <classifier>runtime</classifier>
+    <version>${jacoco.version}</version>
+  </dependency>
+</dependencies>
+
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.jacoco</groupId>
+      <artifactId>jacoco-maven-plugin</artifactId>
+      <version>${jacoco.version}</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>prepare-agent</goal>
+          </goals>
+        </execution>
+        <execution>
+          <id>make-jacoco-report</id>
+          <goals>
+            <goal>report</goal>
+          </goals>
+          <phase>post-integration-test</phase>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>
+{% endhighlight %}
+All the tags are self explanatory. The sonar.jacoco.exclude tag was tricky one to figure out. This tag tells sonar to not include files matching the pattern into the jacoco reports. So its great to exclude tests and UI code from coverage reports.

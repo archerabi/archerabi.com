@@ -1,0 +1,24 @@
+---
+layout: post
+title: Using 3rd party DLLs/Assemblies on Windows Phone
+categories:
+- programming
+tags:
+- Assemby
+- unblock
+- Windows Phone
+- WP7
+status: publish
+type: post
+published: true
+meta:
+  tagazine-media: a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";s:1:"0";s:6:"author";s:8:"17152240";s:7:"blog_id";s:8:"33854070";s:9:"mod_stamp";s:19:"2012-04-27
+    13:34:18";}
+  _elasticsearch_indexed_on: '2012-04-27 13:29:01'
+---
+
+
+<code>Could not load the assembly file://\BlahBLahBlah\my documents\visual studio 2010\Projects\Project1\Project1\obj\Debug\Assembly.dll. This assembly may have been downloaded from the Web. If an assembly has been downloaded from the Web, it is flagged by Windows as being a Web file, even if it resides on the local computer. This may prevent it from being used in your project. You can change this designation by changing the file properties. Only unblock assemblies that you trust
+
+</code>
+This is a common issue that many beginner windows phone developers face. In spite of searching for an hour the only solution i found for this issue was to right click on the dll and then click "Unblock" . Although this is the solution , this didn't work for me , mostly because of my stupidity. If you look at the error message carefully , it complains about the dll in the <strong>DEBUG/RELEASE</strong> folder not the project folder. After unblocking the assembly in your project , do the same for the one in the DEBUG/RELEASE folder.
