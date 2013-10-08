@@ -18,3 +18,7 @@ markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
 exclude: ["vendor"]
+analytics :
+  provider : google
+  google : 
+      tracking_id : 'UA-44692445-1'
