@@ -1,0 +1,53 @@
+---
+layout: post
+title: Wallet 2.0
+categories: []
+tags: [bitcoin,hive]
+status: publish
+type: post
+published: true
+meta: {}
+---
+
+CryptoCurrencies or Virtual Currencies have started a revolution in the payments world. The current generation of CryptoCurrencies have laid a foundation for future innovations. The most important innovation being the "proof of work" system that guarantees that currency is not spent twice. 
+
+The first and also most popular cryptocurrency, Bitcoin, is gaining popularity every day. To know more about bitcoin go [here](http://bitcoinsimplified.org/). Khan Academy also has some great videos on bitcoin if you want to go deep [Khan Academy Videos](https://www.youtube.com/watch?v=Y-w7SnQWwVA&list=PLLpSp_BcWAbefNyzGKg954oXw7EKLEdZv).
+
+The absence of a central authority to clear transactions and a standardized way of transmitting money presents a whole new world of opportunities in the world of payments. The killer app that will take bitcoin mainstream is yet to see the light of day, but there are already a lot of ideas coming about that bear witness to the ingenuity and enthusiasm of the bitcoin community.
+
+One challenge for the adoption of bitcoin has been the amount of technical knowledge required to safely and securely use a wallet. The entire concept of crypocurrencies rely on the concept of signing transactions using keys. Every wallet has a public and a private key. The private key is what signs the transaction, thereby establishing the authenticity of the transaction. The theft or loss of this private key will obviously result in stolen funds or bitcoins being lost forever without any chance of recovery. Cloud wallets or hot wallets like Coinbase, alleviate such problems by managing keys themselves. But having a wallet locally on a computer has always meant that the user needed to be aware of backing up and securing keys. Not anymore. A bitcoin wallet named [Hive](https://www.hivewallet.com/) is making wallets simpler and more secure to use.
+
+These are some of the things that one can do with a Hive wallet.
+
+  * Integrated contacts. Send money from within the wallet.
+  * Apps to manage and spend your money.
+  * Online backups. Use your wallet from anywhere in the world on any computer.
+
+Integrated Contacts
+-------------------
+Add wallets to your contacts and send/recieve without having to worry about wallet addresses.
+
+<div class="photofloatr">
+  <p><img src ="/images/hive-contacts.png" align="left" width="714" height="636" class="img"/></p>
+</div>
+
+
+Apps
+---------------
+Apps within the wallet are a great example of the cryptocurrency advantage. You can use your money however you want without having to go away from the wallet. Gambling, buying and selling bitcoin, recharging cell phone accounts and even donating to charity can all be done within the wallet.
+
+<div class="photofloatr">
+	<p><img src ="/images/hive-apps.png" align="left" width="714" height="636" class="img"/></p>
+</div>
+
+<div class="photofloatr">
+	<p><img src ="/images/hive-seans.png" align="left" width="714" height="636" class="img"/></p>
+</div>
+
+Online backups
+--------------
+Hive has made wallet backups easier. You can sync your wallet to dropbox or to timemachine. No chance of losing your wallet now.
+
+*If you have any questions or would like more information on Bitcoin, please email me at archerabi@gmail.com*
+
+
